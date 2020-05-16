@@ -54,6 +54,5 @@ async def on_ready():
 		await asyncio.create_task(bg_tasks(bot))
 	print('ready')
 
-keep_alive()
-token = os.environ.get("DISCORD_BOT_SECRET")
-bot.run(token)
+
+bot.run(os.getenv("token"))
