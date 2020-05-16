@@ -32,8 +32,7 @@ extensions = [
 	'Moderation.main',
 	'Commands.fun',
 	'Commands.help',
-	'Mail.main',
-	'Other.logger'
+
 ]
 
 if __name__ == '__main__':
@@ -43,14 +42,12 @@ if __name__ == '__main__':
 
 @bot.event
 async def on_ready():
+	
 
 	await bot.change_presence(
 		activity=discord.Activity(
 			name='everything', type=discord.ActivityType(3)
-		)
-	)
-	if not started():
-		await asyncio.create_task(bg_tasks(bot))
+		
 	print('ready')
 
 
