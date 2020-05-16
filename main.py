@@ -42,13 +42,9 @@ if __name__ == '__main__':
 
 @bot.event
 async def on_ready():
-	
-
-	await bot.change_presence(
-		activity=discord.Activity(
-			name='everything', type=discord.ActivityType(3)
+	print("bot is ready")
 		
-	print('ready')
+			
 
 
 bot.run(os.getenv("token"))
