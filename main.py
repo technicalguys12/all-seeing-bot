@@ -28,7 +28,6 @@ started = initialized()
 extensions = [
 	'Commands.dev_cmds',
 	'Commands.data_tweaking',
-	'Starboard.main',
 	'Commands.moderation',
 	'Moderation.main',
 	'Commands.fun',
