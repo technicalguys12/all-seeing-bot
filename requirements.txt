@@ -5,3 +5,5 @@ motor
 emoji
 cryptography
 json-store-client
+discord
+dnspython
